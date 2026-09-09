@@ -229,12 +229,37 @@
           id="d7f9fe70-db0d-4d74-9c3b-455d65084d9c" name="Structure">
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="e41a1af4-6f26-42a4-be1e-c634e797af4e"
             name="Logical System" abstractType="#5e2c9802-289a-4524-a7cf-adfb0dbc10cc"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="0fedbaee-f399-4310-b11e-8808233646ef"
+            name="Operator" abstractType="#123a064a-0497-4bdc-812f-1ebf90dbe232"/>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="5e2c9802-289a-4524-a7cf-adfb0dbc10cc" name="Logical System">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="22802aaa-3d2b-45fc-8f4d-e7156a0b0f7c"
+              name="Kairos Service Platform" abstractType="#a41e3c16-56b5-485b-a827-27715f03a46d"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f4c65a14-9d4a-4274-ac85-fc55d723d88c"
+              name="SLS" abstractType="#ab85be0a-4089-4ad6-be7a-60a1c9630852"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="1f1d7931-7573-4205-b270-78d31ea77673"
+              name="Ground Segment" abstractType="#f72e7f3c-0b77-43fc-bedf-afd32e29fe60"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="2857a5df-a99c-499f-bb1b-eb9f3cb2a570" targetElement="#7f9c9df7-4287-4b86-b36a-aef75921b967"
               sourceElement="#5e2c9802-289a-4524-a7cf-adfb0dbc10cc"/>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="a41e3c16-56b5-485b-a827-27715f03a46d" name="Kairos Service Platform">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="4fa337e2-8c25-4d16-afbc-6170eb506fe4"
+                name="Electrical Power System" abstractType="#ad17f313-aa76-4aa2-bb8a-d9a9e0622cc7"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e64bde6a-3924-4839-b2dc-705d5bbb2a2f"
+                name="AOCS" abstractType="#19ea406a-0fe9-4f56-8fd7-f450460c4f4a"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="ad17f313-aa76-4aa2-bb8a-d9a9e0622cc7" name="Electrical Power System"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="19ea406a-0fe9-4f56-8fd7-f450460c4f4a" name="AOCS"/>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="ab85be0a-4089-4ad6-be7a-60a1c9630852" name="SLS"/>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="f72e7f3c-0b77-43fc-bedf-afd32e29fe60" name="Ground Segment"/>
         </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="123a064a-0497-4bdc-812f-1ebf90dbe232" name="Operator" actor="true"/>
       </ownedLogicalComponentPkg>
       <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
           id="e1b4f95b-c5a7-4b9d-a4cb-47aaa72b2895" targetElement="#0718731a-5298-4007-9b92-ba8d376b9942"
