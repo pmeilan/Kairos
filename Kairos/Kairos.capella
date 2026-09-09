@@ -231,6 +231,8 @@
             name="Logical System" abstractType="#5e2c9802-289a-4524-a7cf-adfb0dbc10cc"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="0fedbaee-f399-4310-b11e-8808233646ef"
             name="Operator" abstractType="#123a064a-0497-4bdc-812f-1ebf90dbe232"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="7de3d718-91c1-4cf8-ae62-8143d72b202c"
+            name="Eduacation &amp; Public Outreach" abstractType="#0b78264d-8c81-4268-a5fd-ade655131b55"/>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="5e2c9802-289a-4524-a7cf-adfb0dbc10cc" name="Logical System">
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="22802aaa-3d2b-45fc-8f4d-e7156a0b0f7c"
@@ -248,10 +250,30 @@
                 name="Electrical Power System" abstractType="#ad17f313-aa76-4aa2-bb8a-d9a9e0622cc7"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e64bde6a-3924-4839-b2dc-705d5bbb2a2f"
                 name="AOCS" abstractType="#19ea406a-0fe9-4f56-8fd7-f450460c4f4a"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="d483941d-b75f-4697-8c82-c476238cd4f5"
+                name="CDH" abstractType="#0576753e-c06b-4b67-a79e-dbfe9229cce9"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="8e485850-2355-49d8-b88b-0208a2e328cb"
+                name="Termal Control System" abstractType="#b7c4fccb-d49b-4db1-85b6-6205752f07cb"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="40172b64-ee7f-424c-8e1c-60c14f5f0f97"
+                name="Solar Array" abstractType="#3cd6e329-b36d-4a4d-acd7-d216c6ff4cc8"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="ec3de2e4-c664-485d-b559-777d2fe333fb"
+                name="PenPad" abstractType="#dc18d416-8acc-42e7-a2c2-1cd0f6f2caf7"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="2b4913be-9455-4488-a49a-c08087d00676"
+                name="LabOSat" abstractType="#ae599e02-ede4-45a5-af6d-86cbe3f1c1db"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="ad17f313-aa76-4aa2-bb8a-d9a9e0622cc7" name="Electrical Power System"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="19ea406a-0fe9-4f56-8fd7-f450460c4f4a" name="AOCS"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="0576753e-c06b-4b67-a79e-dbfe9229cce9" name="CDH" summary="Comand and Data Handling"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="b7c4fccb-d49b-4db1-85b6-6205752f07cb" name="Termal Control System"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="3cd6e329-b36d-4a4d-acd7-d216c6ff4cc8" name="Solar Array"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="dc18d416-8acc-42e7-a2c2-1cd0f6f2caf7" name="PenPad"/>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="ae599e02-ede4-45a5-af6d-86cbe3f1c1db" name="LabOSat"/>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="ab85be0a-4089-4ad6-be7a-60a1c9630852" name="SLS"/>
@@ -260,6 +282,9 @@
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="123a064a-0497-4bdc-812f-1ebf90dbe232" name="Operator" actor="true"/>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="0b78264d-8c81-4268-a5fd-ade655131b55" name="Eduacation &amp; Public Outreach"
+            actor="true"/>
       </ownedLogicalComponentPkg>
       <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
           id="e1b4f95b-c5a7-4b9d-a4cb-47aaa72b2895" targetElement="#0718731a-5298-4007-9b92-ba8d376b9942"
