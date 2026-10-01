@@ -1012,7 +1012,10 @@
                 sourceElement="#e137d1d6-0513-4b9f-b874-651f7af288b2"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="454bacbc-9cfa-4ec1-88bd-0324224f0625" name="Manage electrical charging"/>
+              id="454bacbc-9cfa-4ec1-88bd-0324224f0625" name="Manage electrical charging">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="dc9a42b0-1ac9-45b0-91b9-23829b5ef479" name="FIP 1"/>
+          </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="d5ba0fa2-4abc-443c-9e52-bf9e2e5c5dc1" name="Store energy">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -1023,7 +1026,10 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="b577a05d-c88c-4a4f-8033-d2ad98d69627" name="Take to Orbit"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="6d019bd9-5346-4b1b-a517-f965ec115a58" name="Provide Power and Data Interface"/>
+              id="6d019bd9-5346-4b1b-a517-f965ec115a58" name="Provide Power and Data Interface">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="6ccd05e1-1bef-4834-b69d-bff50a385752" name="FOP 1"/>
+          </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="890dd696-bc4f-4cfa-af19-40c8d76c1516" name="Receive data from ground segment">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -1074,6 +1080,8 @@
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="c211fec1-d3aa-4db8-a9e6-cf2faed65cd3" name="Pulse per Second"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="d0ff8ffe-a745-4910-9491-50791e240e5e" name="LabOSal Control"/>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="f930750c-2490-4ac5-9c20-c05269a190dc" targetElement="#8cc47000-9e40-4d2b-b18b-403b29b80237"
               sourceElement="#2c9bf8b0-5089-4c56-ace6-4a42cc6ccb85"/>
@@ -1215,6 +1223,9 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="b4fc5bb6-bc53-411b-a234-5304e1475dd4" name="Science Data" target="#c3153eef-d094-435f-bb6e-ca225371c89c"
               source="#1df134d8-579e-4dc1-906b-f98fdef07c12"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="c32374eb-4c4e-4538-8832-bb0ad8feb4f6" name="Power" target="#dc9a42b0-1ac9-45b0-91b9-23829b5ef479"
+              source="#6ccd05e1-1bef-4834-b69d-bff50a385752"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
@@ -1264,6 +1275,8 @@
                 name="LabOSat" abstractType="#ae599e02-ede4-45a5-af6d-86cbe3f1c1db"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="defea0b2-ce21-4e70-9cd4-0850328358b4"
                 name="COMM" abstractType="#5386494c-1bde-4105-ad49-c520870b498c"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="cb7bac50-5bc6-4a01-9db8-e7c3b51ca620"
+                name="LUPA" abstractType="#f91759c3-5476-4718-b78c-5b369313be06"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="ad17f313-aa76-4aa2-bb8a-d9a9e0622cc7" name="Electrical Power System">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
@@ -1339,10 +1352,10 @@
                   id="e40bf0a3-7cd3-41c9-8cc4-c8b57debdcda" targetElement="#d4c070e9-9ed9-46e1-ab9b-b521b4ed2206"
                   sourceElement="#ae599e02-ede4-45a5-af6d-86cbe3f1c1db"/>
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="71e50d98-1d05-4e80-8624-634a6b18ef8d" targetElement="#e137d1d6-0513-4b9f-b874-651f7af288b2"
+                  id="154caa01-fe07-4352-ae72-7e47c2ef90be" targetElement="#9501594f-0399-4841-b78f-89b58d677136"
                   sourceElement="#ae599e02-ede4-45a5-af6d-86cbe3f1c1db"/>
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="154caa01-fe07-4352-ae72-7e47c2ef90be" targetElement="#9501594f-0399-4841-b78f-89b58d677136"
+                  id="0ef53cfc-10c1-407b-8c74-50ae109f4a1d" targetElement="#d0ff8ffe-a745-4910-9491-50791e240e5e"
                   sourceElement="#ae599e02-ede4-45a5-af6d-86cbe3f1c1db"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
@@ -1353,6 +1366,12 @@
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="d45758bb-f5e5-4ce5-8583-ad2d5e5a212c" targetElement="#890dd696-bc4f-4cfa-af19-40c8d76c1516"
                   sourceElement="#5386494c-1bde-4105-ad49-c520870b498c"/>
+            </ownedLogicalComponents>
+            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+                id="f91759c3-5476-4718-b78c-5b369313be06" name="LUPA">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="71e50d98-1d05-4e80-8624-634a6b18ef8d" targetElement="#e137d1d6-0513-4b9f-b874-651f7af288b2"
+                  sourceElement="#f91759c3-5476-4718-b78c-5b369313be06"/>
             </ownedLogicalComponents>
           </ownedLogicalComponents>
         </ownedLogicalComponents>
